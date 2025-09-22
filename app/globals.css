@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  /* Disable blue overlay feedback on touch devices */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+html, body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  cursor: pointer;
+  overflow-x: hidden;
+  width: 100%;
+  /* Disable blue overlay feedback on touch devices */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Default cursor styles for interactive elements */
+button,
+a,
+input,
+textarea,
+select {
+  cursor: pointer;
+  /* Ensure touch targets are at least 48px for mobile */
+  min-height: 44px;
+  min-width: 44px;
+  /* Disable blue overlay feedback on touch devices */
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  user-select: none;
+}
+
+/* Class to hide default cursor when custom cursor is active */
+.custom-cursor-active * {
+  cursor: none !important;
+}
+
+.custom-cursor-active button,
+.custom-cursor-active a,
+.custom-cursor-active input,
+.custom-cursor-active textarea,
+.custom-cursor-active select {
+  cursor: none !important;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #291969;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d42620;
+}
+
+/* Responsive image handling */
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Mobile-optimized typography */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Tablet responsive adjustments */
+@media (max-width: 768px) {
+  .grid-cols-2,
+  .grid-cols-3,
+  .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+  .flex-col-md {
+    flex-direction: column;
+  }
+}
+
+/* Prevent text selection during swipe on mobile */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Touch-friendly hover effects - show on desktop only */
+@media (hover: hover) and (pointer: fine) {
+  .hover-cursor:hover {
+    cursor: pointer;
+  }
+}
+
+/* Highlight active links for better mobile navigation */
+a:active {
+  opacity: 0.7;
+}
+
+/* Adjust spacing for mobile */
+@media (max-width: 640px) {
+  .mobile-spacing {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
