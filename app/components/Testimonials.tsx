@@ -13,8 +13,7 @@ const testimonials = [
     content:
       "Ask Me Quick transformed my career completely. Their professional guidance helped me land my dream job at Google. The interview coaching was exceptional!",
     rating: 5,
-    image:
-      "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+    image: "/user4.avif",
   },
   {
     name: "Michael Chen",
@@ -23,8 +22,7 @@ const testimonials = [
     content:
       "The resume building service was outstanding. Within 2 weeks of using their services, I received multiple interview calls. Highly recommended!",
     rating: 5,
-    image:
-      "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+    image: "/user3.avif",
   },
   {
     name: "Emma Rodriguez",
@@ -33,8 +31,7 @@ const testimonials = [
     content:
       "Professional, efficient, and results-driven. Ask Me Quick helped me transition from a local role to an international position in Europe.",
     rating: 5,
-    image:
-      "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+    image: "/user2.avif",
   },
   {
     name: "Raj Patel",
@@ -43,8 +40,7 @@ const testimonials = [
     content:
       "Their global network is impressive. I got placed in Singapore through their Asia-Pacific connections. The entire process was smooth and professional.",
     rating: 5,
-    image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop",
+    image: "/user1.avif",
   },
 ];
 
@@ -106,7 +102,7 @@ export default function Testimonials() {
                 <img
                   src={testimonials[currentIndex].image}
                   alt={testimonials[currentIndex].name}
-                  className="rounded-full object-cover border-4 border-[#291969]"
+                  className="rounded-full object-cover border-4 border-[#291969] w-[158px] h-[158px] bg-cover"
                 />
               </div>
 
