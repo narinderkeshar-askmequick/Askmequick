@@ -4,7 +4,7 @@ import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
 import WhyChooseUs from "./components/WhyChooseUs";
 import FounderSection from "./components/FounderSection";
-import Packages from "./components/Packages";
+// import Packages from "./components/Packages";
 import GlobalReach from "./components/GlobalReach";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
@@ -25,7 +25,7 @@ export default function Home() {
       <AboutUs />
       <FounderSection />
       <WhyChooseUs />
-      <Packages />
+      {/* <Packages /> */}
       <GlobalReach />
       <Testimonials />
       <FAQ />

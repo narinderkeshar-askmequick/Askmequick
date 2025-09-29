@@ -1,33 +1,51 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { FiFileText, FiUsers, FiTarget, FiBriefcase, FiBarChart } from 'react-icons/fi';
+import { motion } from "framer-motion";
+import {
+  FiFileText,
+  FiUsers,
+  FiTarget,
+  FiBriefcase,
+  FiBarChart,
+} from "react-icons/fi";
+import { AiOutlineGlobal } from "react-icons/ai";
 
 const services = [
   {
     icon: FiFileText,
-    title: 'Resume Building',
-    description: 'Professional resume crafting that highlights your strengths and achievements to stand out in the competitive job market.',
+    title: "Resume Building",
+    description:
+      "Professional resume crafting that highlights your strengths and achievements to stand out in the competitive job market.",
   },
   {
     icon: FiUsers,
-    title: 'Interview Coaching',
-    description: 'Comprehensive interview preparation with mock sessions, behavioral questions, and industry-specific guidance.',
+    title: "Interview Coaching",
+    description:
+      "Comprehensive interview preparation with mock sessions, behavioral questions, and industry-specific guidance.",
   },
   {
     icon: FiTarget,
-    title: 'Career Counseling',
-    description: 'Personalized career guidance to help you identify the right path and make informed professional decisions.',
+    title: "Career Counseling",
+    description:
+      "Personalized career guidance to help you identify the right path and make informed professional decisions.",
   },
   {
     icon: FiBriefcase,
-    title: 'Job Placement',
-    description: 'Direct placement assistance with our network of 500+ partner companies across global markets.',
+    title: "Job Placement",
+    description:
+      "Direct placement assistance with our network of 500+ partner companies across global markets.",
   },
   {
     icon: FiBarChart,
-    title: 'Skill Assessment',
-    description: 'Comprehensive evaluation of your skills and competencies with recommendations for improvement.',
+    title: "Outsourcing Manpower",
+    description:
+      "Comprehensive evaluation of your skills and competencies with recommendations for improvement.",
+  },
+  {
+    icon: AiOutlineGlobal,
+    title: "Global Tour & Travels",
+    description:
+      "We navigate the competitive global job market to chart the perfect course for your next professional destination.",
   },
 ];
 
@@ -74,7 +92,9 @@ export default function Services() {
               </div>
               <button className="text-[#d42620] font-semibold hover:text-red-700 transition-colors duration-200 flex items-center group min-h-[44px]">
                 Learn More
-                <span className="ml-2 group-hover:translate-x-1 transition-transform duration-200 hover-cursor">→</span>
+                <span className="ml-2 group-hover:translate-x-1 transition-transform duration-200 hover-cursor">
+                  →
+                </span>
               </button>
             </motion.div>
           ))}

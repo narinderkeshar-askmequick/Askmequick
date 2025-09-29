@@ -82,7 +82,7 @@ export default function Hero() {
           </div>
           <p className="text-base md:text-xl text-gray-600 mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed">
             With 27 years of excellence since 1998, we have helped over 50,000
-            professionals find their dream careers across USA/Canada, Europe,
+            professionals find their dream careers across PAN India And Gulf, Europe,
             and Asia-Pacific markets.
           </p>
         </motion.div>

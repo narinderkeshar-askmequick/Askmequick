@@ -19,7 +19,7 @@ const reasons = [
   {
     icon: FiGlobe,
     title: 'Global Network',
-    description: 'Partnerships with 500+ companies across USA, Canada, Europe & APAC',
+    description: 'Partnerships with 500+ companies across Gulf, Europe & APAC',
     color: 'bg-purple-500'
   },
   {

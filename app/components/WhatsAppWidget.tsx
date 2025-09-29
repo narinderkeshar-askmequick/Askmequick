@@ -7,7 +7,7 @@ import { FiMessageCircle, FiX } from 'react-icons/fi';
 export default function WhatsAppWidget() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const whatsappNumber = "+1234567890"; // Replace with actual WhatsApp number
+  const whatsappNumber = "+91-9216602168"; // Replace with actual WhatsApp number
   const message = "Hi! I'm interested in your career consultation services. Can you help me?";
 
   const handleWhatsAppClick = () => {

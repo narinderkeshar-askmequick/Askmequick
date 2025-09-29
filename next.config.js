@@ -1,14 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Removed static export configuration for normal Vercel deployment
+  output: 'export',
+  assetPrefix: '/',
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
+    unoptimized: true
   },
+  trailingSlash: true
 };
 
 module.exports = nextConfig;

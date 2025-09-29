@@ -1,55 +1,63 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
-import { useState } from 'react';
-import { FiMail, FiPhone, FiMapPin, FiClock, FiSend } from 'react-icons/fi';
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { FiMail, FiPhone, FiMapPin, FiClock, FiSend } from "react-icons/fi";
 
 const contactInfo = [
   {
     icon: FiPhone,
-    title: 'Phone',
-    details: ['+1-800-ASK-QUICK', '+91-98765-43210'],
-    description: 'Call us for immediate assistance'
+    title: "Phone",
+    details: ["+91-9216602168", "+91-9646831077"],
+    description: "Call us for immediate assistance",
   },
   {
     icon: FiMail,
-    title: 'Email',
-    details: ['info@askmequick.com', 'careers@askmequick.com'],
-    description: 'Send us your queries anytime'
+    title: "Email",
+    details: [
+      "jobsaskme@gmail.com ",
+      "askmequick.hr@gmail.com ",
+      "globex.kumar@gmail.com ",
+    ],
+    description: "Send us your queries anytime",
   },
   {
     icon: FiMapPin,
-    title: 'Offices',
-    details: ['New York, USA', 'Toronto, Canada', 'London, UK', 'Singapore'],
-    description: 'Global presence, local expertise'
+    title: "Offices",
+    details: ["SCO 148-149 Ground Floor", " Sector 34-A Chandigarh, 160034"],
+    description: "Global presence, local expertise",
   },
   {
     icon: FiClock,
-    title: 'Business Hours',
-    details: ['Mon-Fri: 9:00 AM - 6:00 PM', 'Sat: 10:00 AM - 4:00 PM'],
-    description: 'We\'re here when you need us'
-  }
+    title: "Business Hours",
+    details: ["Mon-Fri: 9:00 AM - 6:00 PM", "Sat: 10:00 AM - 4:00 PM"],
+    description: "We're here when you need us",
+  },
 ];
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -67,7 +75,8 @@ export default function Contact() {
             Get In Touch
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to take the next step in your career? Contact us today for a free consultation
+            Ready to take the next step in your career? Contact us today for a
+            free consultation
           </p>
         </motion.div>
 
@@ -82,7 +91,7 @@ export default function Contact() {
             <h3 className="text-2xl font-bold text-[#291969] mb-8">
               Contact Information
             </h3>
-            
+
             <div className="space-y-8">
               {contactInfo.map((info, index) => (
                 <motion.div
@@ -124,7 +133,9 @@ export default function Contact() {
               <div className="text-center">
                 <FiMapPin className="w-12 h-12 text-[#291969] mx-auto mb-4" />
                 <p className="text-gray-600">Interactive Map Coming Soon</p>
-                <p className="text-sm text-gray-500">Find our offices worldwide</p>
+                <p className="text-sm text-gray-500">
+                  Find our offices worldwide
+                </p>
               </div>
             </motion.div>
           </motion.div>
@@ -140,7 +151,7 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-[#291969] mb-6">
                 Send us a Message
               </h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -157,7 +168,7 @@ export default function Contact() {
                       placeholder="Your full name"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Email Address *
@@ -188,7 +199,7 @@ export default function Contact() {
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
-                  
+
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Service Interest
