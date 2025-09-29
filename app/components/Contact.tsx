@@ -8,7 +8,7 @@ const contactInfo = [
   {
     icon: FiPhone,
     title: "Phone",
-    details: ["+91-9216602168", "+91-9646831077"],
+    details: ["01722666947","+91-9216602168", "+91-9646831077"],
     description: "Call us for immediate assistance",
   },
   {

@@ -61,7 +61,7 @@ export default function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-[#291969] hover:text-[#d42620] transition-colors duration-200 font-medium hover-cursor"
+                className="text-[#291969] hover:text-[#d42620] transition-colors duration-200 font-medium hover-cursor flex items-center justify-center"
               >
                 {item.name}
               </a>
