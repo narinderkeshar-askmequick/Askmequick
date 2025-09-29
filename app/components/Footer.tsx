@@ -17,15 +17,15 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <FiMapPin className="w-5 h-5 text-[#d42620] mr-3" />
-                <span className="text-blue-100">Global Offices: USA, Canada, Europe, Asia-Pacific</span>
+                <span className="text-blue-100">SCO 148-149 Ground Floor, Sector 34-A Chandigarh, 160034</span>
               </div>
               <div className="flex items-center">
                 <FiPhone className="w-5 h-5 text-[#d42620] mr-3" />
-                <span className="text-blue-100">+1-800-ASK-QUICK</span>
+                <span className="text-blue-100">+91-9216602168</span>
               </div>
               <div className="flex items-center">
                 <FiMail className="w-5 h-5 text-[#d42620] mr-3" />
-                <span className="text-blue-100">info@askmequick.com</span>
+                <span className="text-blue-100">jobsaskme@gmail.com</span>
               </div>
             </div>
           </div>
