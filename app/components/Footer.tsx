@@ -21,11 +21,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <FiPhone className="w-5 h-5 text-[#d42620] mr-3" />
-                <span className="text-blue-100">+91-9216602168</span>
+                <span className="text-blue-100">+91-9316527107</span>
               </div>
               <div className="flex items-center">
                 <FiMail className="w-5 h-5 text-[#d42620] mr-3" />
-                <span className="text-blue-100">jobsaskme@gmail.com</span>
+                <span className="text-blue-100">globex.kumar@gmail.com</span>
               </div>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default function Footer() {
         <div className="border-t border-white/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-blue-100 text-sm mb-4 md:mb-0">
-              © 2025 Ask Me Quick. All rights reserved. | GSTIN: 123456789 | UDYAM: UDYAM-XX-00-0000000
+              © 2025 Ask Me Quick. All rights reserved. | GSTIN: 04AGNPK7695L1ZM | UDYAM: UDYAM-CH-01-0028602
             </div>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-blue-100 hover:text-white transition-colors duration-200">
